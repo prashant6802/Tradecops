@@ -12,6 +12,7 @@ import Navbar from "./components/Basic Components/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
+import DisableRightClick from "./DisableRightClick";
 // import Navbar2 from "./components/Basic Components/Navbar2";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div className="App" style={{background:{noise}}}>
+      <DisableRightClick/>
       {/* <CustomCursor/> */}
       <div className="navart" ref={left1Ref}>
       <Navbar/>
